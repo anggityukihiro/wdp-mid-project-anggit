@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Anggit Nur Iman</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body class="transition duration-500 dark:transition dark:duration-500 dark:bg-secondary dark:text-white">
+    <nav class="nav dark:bg-secondary dark:text-white drop-shadow-[0_4px_3px_rgba(255,255,255,0.25)]">
+        <div class="container flex justify-between">
+            <a href="index.html" class="logo">Anggit</a>
+            <!-- <button class="relative bg-white px-8 hidden" onclick="handleNavMenu()">
+                <img class="w-7" src="http://cdn.onlinewebfonts.com/svg/img_545657.png" />
+            </button> -->
+
+            <div class="flex justify-center">
+                <span class="text-sm text-black dark:text-white mr-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                </span>
+                <input type="checkbox" id="toggle" class="hidden" />
+                <label for="toggle">
+                    <div class="w-9 h-5 bg-black dark:bg-white rounded-full flex items-center p-1 cursor-pointer">
+                        <div
+                            class="w-4 h-4 bg-white dark:bg-secondary rounded-full toggle-circle transition duration-500">
+                        </div>
+                    </div>
+                </label>
+                <span class="text-sm text-black dark:text-white ml-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                </span>
+            </div>
+
+            <div class="tham tham-e-spin tham-w-8" :class="{ 'tham-active': opened }" onclick="handleNavMenu()">
+                <div class="tham-box">
+                    <div class="tham-inner bg-black dark:bg-white">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <div id="navMenu"
+        class="fixed z-20 left-0 top-0 w-screen h-screen bg-white/90 dark:bg-black/90 items-center justify-center hidden">
+        <button class="absolute right-16 top-10 dark:text-white" onclick="handleNavMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+        <ul class="text-white text-center text-5xl font-light space-y-12 tracking-widest">
+            <li><a class="text-secondary hover:text-third dark:text-gray-400 dark:hover:text-white transition-colors"
+                    href="./">HOME</a></li>
+            <li><a class="text-secondary hover:text-third dark:text-gray-400 dark:hover:text-white transition-colors"
+                    href="aboutme.html">ABOUT ME</a></li>
+            <li><a class="text-secondary hover:text-third dark:text-gray-400 dark:hover:text-white transition-colors"
+                    href="workexperiences.html">EXPERIENCES</a></li>
+        </ul>
+    </div>
+    <header class="relative container py-24 pt-20 md:mt-24 dark:bg-secondary">
+        <div class="relative z-10 space-y-8 py-10">
+            <h1 class="text-6xl md:text-9xl font-secondary font-extrabold">Hello, <br />I'm
+                Anggit.</h1>
+            <div class="text-xl md:text-2xl font-thin space-y-2">
+                <div>IT Operation & Infrastructure</div>
+                <div>Backend Developer</div>
+            </div>
+        </div>
+        <img class="md:absolute right-0 top-0 md:w-3/4 md:h-full object-cover" src="img/bg_home.jpg" alt="">
+
+        </div>
+    </header>
+    <section id="about" class="container space-y-8 py-2 md:py-8">
+        <p class="text-2xl font-light max-w-screen-md">I'm an Web Developer who excited IT Infrastucure too and now
+            based in Bandung, Indonesia. I like to resolve problems that can solve with application, especially web
+            application. </p>
+        <a href="aboutme.html"><button class="button mt-10">ABOUT ME</button></a>
+    </section>
+    <section id="project" class="container py-20">
+
+        <div class="project-wrapper">
+
+
+            <a href="https://rumahzakat.academy" target="_blank" class="project-item">
+                <div class="project-item-title">
+                    <p>RZ ACADEMY</p>
+                </div>
+                <img class="project-item-thumbnail" src="img/rz_academy.jpg" alt="">
+            </a>
+
+            <a href="https://lelangbintang.com" target="_blank" class="project-item max-h-screen">
+                <div class="project-item-title">
+                    <p>LELANG BINTANG</p>
+                </div>
+                <img class="project-item-thumbnail" src="img/lelang_bintang.PNG" alt="">
+            </a>
+
+
+            <a href="https://yayasanicb.org" target="_blank" class="project-item max-h-screen">
+                <div class="project-item-title">
+                    <p>YAYASAN ICB</p>
+                </div>
+                <img class="project-item-thumbnail" src="img/yayasan_icb.PNG" alt="">
+            </a>
+        </div>
+    </section>
+    <footer class="mt-40 bg-secondary py-40 dark:bg-third">
+        <div class="container flex flex-col md:flex-row items-center">
+            <p class="text-gray-500 dark:text-white text-2xl md:text-3xl font-secondary leading-normal">I’m always up
+                for adventure and
+                international opportunities. Feel free to say hello via <a
+                    class="text-white font-secondary dark:text-black"
+                    href="mailto:anggityukihiro@gmail.com">anggityukihiro@gmail.com</a>
+            </p>
+            <div class="flex flex-col items-center">
+                <img src="img/footer_cv.png" alt="">
+                <a href="CV.pdf"><button class="button-white">DOWNLOAD CV</button></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function handleNavMenu() {
+            const navMenu = document.querySelector('#navMenu')
+            const isActive = navMenu.classList.contains('flex')
+
+            if (isActive) {
+                navMenu.classList.remove('flex')
+                navMenu.classList.add('hidden')
+            } else {
+                navMenu.classList.add('flex')
+                navMenu.classList.remove('hidden')
+            }
+        }
+
+        const checkbox = document.querySelector('#toggle');
+        const html = document.querySelector('html');
+
+        checkbox.addEventListener('click', function () {
+            checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark')
+        })
+    </script>
+</body>
+
+</html>
