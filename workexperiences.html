@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Experiences - Anggit Nur Iman</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body class="transition duration-500 dark:transition dark:duration-500 dark:bg-secondary dark:text-white">
+    <nav class="nav dark:bg-secondary dark:text-white drop-shadow-[0_4px_3px_rgba(255,255,255,0.25)]">
+        <div class="container flex justify-between">
+            <a href="index.html" class="logo">Anggit</a>
+            <!-- <button class="relative bg-white px-8 hidden" onclick="handleNavMenu()">
+                <img class="w-7" src="http://cdn.onlinewebfonts.com/svg/img_545657.png" />
+            </button> -->
+
+            <div class="flex justify-center">
+                <span class="text-sm text-black dark:text-white mr-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                </span>
+                <input type="checkbox" id="toggle" class="hidden" />
+                <label for="toggle">
+                    <div class="w-9 h-5 bg-black dark:bg-white rounded-full flex items-center p-1 cursor-pointer">
+                        <div
+                            class="w-4 h-4 bg-white dark:bg-secondary rounded-full toggle-circle transition duration-500">
+                        </div>
+                    </div>
+                </label>
+                <span class="text-sm text-black dark:text-white ml-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                </span>
+            </div>
+
+            <div class="tham tham-e-spin tham-w-8" :class="{ 'tham-active': opened }" onclick="handleNavMenu()">
+                <div class="tham-box">
+                    <div class="tham-inner bg-black dark:bg-white">
+                    </div>
+                </div>
+
+            </div>
+    </nav>
+    <div id="navMenu"
+        class="fixed z-20 left-0 top-0 w-screen h-screen bg-white/90 dark:bg-black/90 items-center justify-center hidden">
+        <button class="absolute right-16 top-10 dark:text-white" onclick="handleNavMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+        <ul class="text-white text-center text-5xl font-light space-y-12 tracking-widest">
+            <li><a class="text-secondary hover:text-third dark:text-gray-400 dark:hover:text-white transition-colors"
+                    href="./">HOME</a></li>
+            <li><a class="text-secondary hover:text-third dark:text-gray-400 dark:hover:text-white transition-colors"
+                    href="aboutme.html">ABOUT ME</a></li>
+            <li><a class="text-secondary hover:text-third dark:text-gray-400 dark:hover:text-white transition-colors"
+                    href="workexperiences.html">EXPERIENCES</a></li>
+        </ul>
+    </div>
+
+    <section class="body-font overflow-hidden">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="-my-8 divide-y-2 divide-gray-500 text-secondary dark:text-white">
+                <div class="py-8 flex flex-wrap md:flex-nowrap">
+                    <div
+                        class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col mx-auto justify-center text-center dark:bg-third">
+                        <span class="font-semibold title-font">PT GTI Merah Putih</span>
+                        <span class="mt-1 text-sm">Oct 2011 - Oct 2012</span>
+                        <div class="pt-3 mx-auto">
+                            <img src="img/gti.jpg">
+                        </div>
+                    </div>
+                    <div class="md:flex-grow md:ml-3">
+                        <h2 class="text-2xl font-bold title-font mb-2 font-secondary">System
+                            Administrator
+                        </h2>
+                        <p class="leading-relaxed">Ini adalah pengalaman pertama saya terjun langsung di dunia indsutri,
+                            dimana sebelum saya direkrut sebagai karyawan, selama 6 bulan saya melakukan Praktek Kerja
+                            Lapangan (PKL) disini untuk menuntaskan studi saya di bangku SMK. Alhamdulillah banyak
+                            sekali hal baru yang saya ulik di perusahaan ini. Mulai dari projek PKL yang menjadi bahan
+                            sidang saya, yaitu membuat <b>VOIP Server</b> menggunakan OS <b>Trixbox</b> dimana VOIP
+                            Server ini sudah dapat melakukan <b>Outbound Call</b> dan menerima <b>Inbound Call</b>
+                            menggunakan <b>jaringan CDMA/GSM maupun Line Telepon Kantor</b></p>
+                        <br>
+
+                        <p class="leading-relaxed">Project lain diantaranya <b>Setup Kloxo (Hosting Management), PC
+                                Virtualization with Network Load OS, setup jaringan di kantor IALF Jakarta</b>.
+                            Pengalaman yang
+                            paling tidak terlupakan selama berada di perusahaan ini yaitu saya berkesempatan pergi ke
+                            <b>Brunei Darussalam</b> sebagai bagian dari squad <b>Project Data Center Negara</b>.
+                            Intinya di perusahaan ini skill System Administrator saya terutama dalam menghandle server
+                            Linux / BSD terasah</p>
+                    </div>
+                </div>
+
+                <div class="py-8 flex flex-wrap md:flex-nowrap">
+                    <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col mx-auto justify-center text-center dark:bg-third"">
+                        <span class=" font-semibold title-font">PT Indosat Mega Media</span>
+                        <span class="mt-1 text-sm">Oct 2012 - Feb 2013</span>
+                        <div class="pt-3 mx-auto">
+                            <img src="img/m2.png">
+                        </div>
+                    </div>
+                    <div class="md:flex-grow md:ml-3">
+                        <h2 class="text-2xl font-bold title-font mb-2 font-secondary">Technical Support</h2>
+                        <p class="leading-relaxed">Bisa dibilang ini pengalaman saya dan keputusan saya memberanikan
+                            diri bekerja di luar kota, yaitu di kota Jakarta. Alhamdulillah banyak pengalaman juga di
+                            perusahaan ini, meskipun hanya bertahan 6 bulan. Disini saya jadi memahami bagaimana
+                            infrastruktur jaringan seluler, hubungan antar BTS. Pada intinya saya bekerja di perusahaan
+                            ini untuk mensukseskan project <b>SuperWiFi</b>. Pengalaman lainnya saya bisa mengenal
+                            daerah seputar Jabodetabek karena sehari-hari nya mencari BTS di berbagai gedung daerah,
+                            bahkan di tengah sawah/hutan 😂
+                    </div>
+                </div>
+
+                <div class="py-8 flex flex-wrap md:flex-nowrap">
+                    <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col mx-auto justify-center text-center dark:bg-third"">
+                        <span class=" font-semibold title-font">Rumah Zakat</span>
+                        <span class="mt-1 text-sm">Mar 2013 - Jan 2015</span>
+                        <div class="pt-3 mx-auto">
+                            <img src="img/rzold.png">
+                        </div>
+                    </div>
+                    <div class="md:flex-grow md:ml-3">
+                        <h2 class="text-2xl font-bold title-font mb-2 font-secondary">Technical Support</h2>
+                        <p class="leading-relaxed">Alhamdulillah saya sangat bersyukur bisa bergabung dengan salah satu
+                            lembaga sosial terbesar se nasional yaitu Rumah Zakat, dimana saya dapat berkerja sambil
+                            beramal dan tentunya karena nilai agama yang sangat kuat pada kultur organisasinya. Pertama
+                            kali nya bekerja di Rumah Zakat sebagai Technical Support, dimana saya fokus pada
+                            <b>maintenance Komputer/Laptop</b> dengan berbagai case dan <b>troubleshootingnya</b>
+                            masing-masing. Selain itu saya juga di amanahkan untuk <b>maintenance jaringan internet
+                                seluruh kantor cabang Rumah Zakat</b> yang pada saat itu kurang lebih ada 30 an kantor
+                            cabang.</p>
+                    </div>
+                </div>
+
+                <div class="py-8 flex flex-wrap md:flex-nowrap">
+                    <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col mx-auto justify-center text-center dark:bg-third"">
+                        <span class=" font-semibold title-font">Rumah Zakat</span>
+                        <span class="mt-1 text-sm">Jan 2015 - Des 2017</span>
+                        <div class="pt-3 mx-auto">
+                            <img src="img/midrz.png">
+                        </div>
+                    </div>
+                    <div class="md:flex-grow md:ml-3">
+                        <h2 class="text-2xl font-bold title-font mb-2 font-secondary">Application Support</h2>
+                        <p class="leading-relaxed">Seiring berjalannya waktu, Rumah Zakat menjadi lembaga yang tumbuh
+                            eksponensial sebagai LAZ Nasional, inline dengan semakin banyaknya data dan aplikasi yang
+                            digunakan. Oleh karenanya perlu resource khusus untuk meenjaga agar data tetap valid dan
+                            aplikasi bisa digunakan secara optimal. Begitulah alasan adanya jabatan baru, yaitu
+                            Application Support. Alhamdulillah selama saya diamankahan jabatan ini, saya jadi lebih
+                            mulai memahami dan mendalami sebuah alur sistem dalam suatu aplikasi, karena kalau tidak
+                            begitu akan sulit untuk menemukan bugs atau data yang tidak valid. Saya jadi mulai familiar
+                            dengan <b>Bugs, DBMS, PHP, HTML, CSS dan hal-hal yang berhubungan dengan Aplikasi Web karena
+                                memang saat itu Rumah Zakat banyak menggunakan platform web untuk aplikasinya.</b>Disini
+                            saya jadi mulai tertarik, bagaimana jika saya yang membuat dan terlibat dalam pembangunan
+                            sistem aplikasi yang bisa digunakan oleh organisasi, kita singkat saja saya menjadi
+                            <b>tertarik di dunia per Coding an 🤣</b></p>
+                    </div>
+                </div>
+
+                <div class="py-8 flex flex-wrap md:flex-nowrap">
+                    <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col mx-auto justify-center text-center dark:bg-third"">
+                        <span class=" font-semibold title-font">Rumah Zakat</span>
+                        <span class="mt-1 text-sm">Des 2017 - Jan 2022</span>
+                        <div class="pt-3 mx-auto">
+                            <img src="img/newrz.png">
+                        </div>
+                    </div>
+                    <div class="md:flex-grow md:ml-3">
+                        <h2 class="text-2xl font-bold title-font mb-2 font-secondary">Apps Development & Maintenance
+                        </h2>
+                        <p class="leading-relaxed">Dari arti jabatannya saja, sudah jelas terbayang apa yang saya
+                            lakukan saat diamanahi jabatan ini. Yaps, harapan saya ingin berkecimpung di dunia per
+                            Coding an terkabul 😆. Disinilah saya mulai banyak mendalami per Coding an khususnya di Web
+                            Application. Mulai dari <b>user aggrement, desain dan mockup, development, quality control
+                                dan testing sampai ke sosialisasi dan dokumentasi</b>. Sungguh luar biasa peliknya,
+                            adakalanya stres, frustasi, tapi itu semua terbayarkan ketika aplikasi buatan saya sangat
+                            membantu user dan tentunya aplikasi digunakan, tapi ada kalanya aplikasi nya tidak di pakai
+                            juga 😓. Karena keterbatasan resource, saya juga secara tidak langsung meng handle dan
+                            maintenance server-server yang digunakan sebagai production web aplikasi. Jadi ya bisa
+                            disimpulkan saya bisa jadi disebut <b>Fullstack Developer + DevOps</b> 🥳</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="text-white body-font bg-secondary dark:bg-third">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">Created with <svg
+                xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 px-1" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg> by Anggit Nur
+            Iman
+            <p
+                class="text-sm text-white sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4 text-center">
+                ©
+                2022 - Coding Pertama Tailwind CSS
+                <a href="https://twitter.com/knyttneve" class="text-white ml-1" rel="noopener noreferrer"
+                    target="_blank"></a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <a href="https://facebook.com/anggityukihiro" target="_blank">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                    </svg>
+                </a>
+                <a class="ml-3" href="https://twitter.com/anggityukihiro" target="_blank">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path
+                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                        </path>
+                    </svg>
+                </a>
+                <a class="ml-3" href="https://instagram.com/anggityukihiro" target="_blank">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                    </svg>
+                </a>
+                <a class="ml-3" href="https://www.linkedin.com/in/anggitnuriman/" target="_blank">
+                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path stroke="none"
+                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                        </path>
+                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                    </svg>
+                </a>
+            </span>
+        </div>
+    </footer>
+
+    <script>
+        function handleNavMenu() {
+            const navMenu = document.querySelector('#navMenu')
+            const isActive = navMenu.classList.contains('flex')
+
+            if (isActive) {
+                navMenu.classList.remove('flex')
+                navMenu.classList.add('hidden')
+            } else {
+                navMenu.classList.add('flex')
+                navMenu.classList.remove('hidden')
+            }
+        }
+
+        const checkbox = document.querySelector('#toggle');
+        const html = document.querySelector('html');
+
+        checkbox.addEventListener('click', function () {
+            checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark')
+        })
+    </script>
+</body>
+
+</html>

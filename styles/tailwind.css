@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+	@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+	* {
+		font-family: "Lato", sans-serif;
+	}
+}
+
+.nav {
+	@apply fixed top-0 left-0 w-full py-5 bg-white z-20 shadow-md;
+}
+
+.logo {
+	@apply font-secondary font-bold text-3xl;
+}
+
+.button {
+	@apply border border-secondary dark:border-white py-3 px-8 tracking-widest text-sm hover:bg-secondary hover:text-white dark:hover:bg-third dark:hover:text-black transition-colors duration-300;
+}
+
+.button-white {
+	@apply border border-white dark:border-black py-3 px-8 tracking-widest text-white dark:text-black text-xs hover:bg-white dark:hover:bg-black hover:text-secondary dark:hover:text-white transition-colors duration-300;
+}
+
+.project-wrapper {
+	@apply grid grid-cols-1 md:grid-cols-2 gap-8;
+}
+
+.project-item {
+	@apply relative overflow-hidden;
+}
+
+.project-item:nth-child(3n + 1) {
+	@apply md:col-span-2;
+}
+
+.project-item .project-item-title {
+	@apply absolute z-10 p-12 w-full h-full text-3xl text-white transition-all;
+}
+
+.project-item .project-item-title p {
+	@apply transform -translate-y-8 opacity-0 transition-all duration-300 font-secondary tracking-wider font-semibold;
+}
+
+.project-item:hover .project-item-title {
+	@apply bg-secondary bg-opacity-50;
+}
+
+.project-item:hover .project-item-title p {
+	@apply -translate-y-0 opacity-100;
+}
+
+.project-item .project-item-thumbnail {
+	@apply w-full h-full object-cover transition-all duration-500;
+}
+
+.project-item:hover .project-item-thumbnail {
+	@apply scale-105;
+}
+
+#toggle:checked ~ label div.toggle-circle{
+	@apply translate-x-3;
+}
